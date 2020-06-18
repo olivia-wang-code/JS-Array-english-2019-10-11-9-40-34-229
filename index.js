@@ -1,7 +1,16 @@
 // The writer determines whether the following variables are of type array.
 var a = '[a, b, c, d]';
 var b = [1, 2, 3, 4];
-//TODO
+function isArrayOrNot(arr){
+    if(Array.isArray(arr)==true){
+        console.log("是数组");
+    }
+    else{
+        console.log("不是数组");
+    }
+}
+isArrayOrNot(a);
+isArrayOrNot(b);
 
 
 // Write a program that multiplies each entry in the following array by 2。
